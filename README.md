@@ -1,5 +1,5 @@
 # HTWK Leipzig - Multimedia Grundkurs
-## Projekt: Facetten des Internets
+## Projekt: Facetten des Phänomens Internet
 
 ### Aufgabenstellung
 "Das Projekt soll in der Regel von Dreiergruppen bearbeitet werden. Suchen Sie sich
