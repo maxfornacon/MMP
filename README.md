@@ -25,4 +25,4 @@ Ziel ist es eine Webpräsentation zu erstellen, welche das Thema Kryptowährunge
         * Funktionen
         * Vor-/Nachteile
     - mögliche Technische Schwierigkeiten
-    - ethische Probleme
+    - ethische Probleme / Rechtslage
