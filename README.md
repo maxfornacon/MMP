@@ -14,15 +14,16 @@ Krypto-Mining als Alternative zu Werbung?
 Ziel ist es eine Webpräsentation zu erstellen, welche das Thema Kryptowährungen kurz anreißt, um ein Grundverständnis für die Thematik zu gewinnen. Der Schwerpunkt sei das Projekt "Coinhive", welches mittels JavaScript Coinmining auf Websites als alternative Einnahmequelle zu klassischen Webeeinblendungen ermöglicht. Dabei soll ein Einblick in den Funktionsumfang gegeben und auf technische, sowie ethische Probleme eingegangen werden. Der potentielle Nutzer der erstellten Seite soll dabei verschiedene praktische Einsatzmöglichkeiten dieser Technologie ausprobieren können.
 
 ### Gliederung
-+ Kryptowährung
++ Kryptowährung    /Johann
     - Was ist das?
     - Geschichtliche Aspekte
     - Bitcoin
     - Monero
-+ Hintergrundmining auf Websites
++ Hintergrundmining auf Websites    /Max
     - Coinhive
         * Vorstellung
         * Funktionen
         * Vor-/Nachteile
-    - mögliche Technische Schwierigkeiten
-    - ethische Probleme / Rechtslage
+    - mögliche Technische Schwierigkeiten    /Felix
+    - ethische Probleme (allgemein) / Rechtslage
+    - Verwendung im Torbrowser
