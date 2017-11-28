@@ -1,4 +1,4 @@
-Kryptowährung – Was ist das?
+# Kryptowährung – Was ist das?
 
 Unter dem Begriff Kryptowährung versteht man digitales Geld. Da es nicht durch Zentralbanken gewirtschaftet wird,
 ist die Kryptowährung kein gesetzlich anerkanntes Zahlungsmittel. Daher wird auch oft die Bezeichnung Kryptogeld benutzt.
