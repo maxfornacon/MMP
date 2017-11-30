@@ -2,7 +2,7 @@
 
 ''Kryptowährungen sind das, was die Leute darüber denken, verändern aber gleichzeitig das, was die Leute über andere Dinge denken.'' 
 Kryptowährungen besitzen viele vorteilhafte Effekte, allerdings wahrscheinlich auch genauso viele negative.
-Ein guter Vergleich wäre die Anfangszeit des Internets, dort gab viele Fürsprecher, aber auch Leute die gegen diesen noch unbekannten Fortschritt waren.
+Ein guter Vergleich wäre die Anfangszeit des Internets, dort gab viele Fürsprecher, im Gegenzug aber auch Leute die gegen diesen noch unbekannten Fortschritt waren.
 Fazit: 
 Die ethische Frage ist eine Thematik die sich über Wirtschaft, Soziales, Kultur und Informatik erstreckt, und jeder muss für sich selbst bestimmen wie er mit diesem Thema umgeht.
 
