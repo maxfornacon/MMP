@@ -19,3 +19,9 @@ Rigs hacken, damit der Fehler nicht bemerkt wird.
 
 Das Kryptogeld lässt sich gut mit einer Goldmine vergleichen. Bei beiden ist der Vorrat begrenzt und je mehr Coins/Gold man hat, desto 
 schwerer wird es mehr zu finden. Daher kommen die Begriffe Mining Rigs und Miner, da diese quasi das Kryptogeld/Gold abbauen.
+
+# Geschichte
+
+# Die verschiedenen Kryptowährungen
+## Bitcoin
+## Monero
