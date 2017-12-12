@@ -1,0 +1,56 @@
+nav {
+	margin: 30px auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+
+.menu li a {
+	text-decoration: none;
+	align-self: center;
+	font-size: 16px;
+	padding: 16px 40px;
+	border-bottom: 2px solid transparent;
+	transition: border-color .2s linear;
+	color: black;
+}
+
+.menu li a:hover {
+	border-color: black;
+}
+
+.menu li ul {
+	position: absolute;
+	margin-top: 17px;
+	display: none;
+	background: white;
+	transition: opacity 0.2s linear;
+}
+
+.menu li:hover > ul {
+	display: block;
+	animation: fadeIn 0.2s;
+}
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+.menu li ul li {
+	padding: 10px 0px;
+	list-style: none;
+}
+.menu li ul li a {
+	border: none;
+	padding: 0;
+}
