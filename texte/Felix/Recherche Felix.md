@@ -1,9 +1,9 @@
 # Ethische Probleme:
 
-''Kryptowährungen sind das, was die Leute darüber denken, verändern aber gleichzeitig das, was die Leute über andere Dinge denken.'' 
+''Kryptowährungen sind das, was die Leute darüber denken, verändern aber gleichzeitig das, was die Leute über andere Dinge denken.''
 Kryptowährungen besitzen viele vorteilhafte Effekte, allerdings wahrscheinlich auch genauso viele negative.
 Ein guter Vergleich wäre die Anfangszeit des Internets, dort gab viele Fürsprecher, im Gegenzug aber auch Leute die gegen diesen noch unbekannten Fortschritt waren.
-Fazit: 
+Fazit:
 Die ethische Frage ist eine Thematik die sich über Wirtschaft, Soziales, Kultur und Informatik erstreckt, und jeder muss für sich selbst bestimmen wie er mit diesem Thema umgeht.
 
 # Rechtslage:
@@ -32,7 +32,7 @@ Zu beachten ist außerdem bei einem Hardware,-Stromausfall sind hohe Verluste bz
 + können als Investment angelegt werden
 + Überweisung an Freunde/Familie weltweit und ohne Gebühr
 + Möglichkeit im eigenen Shop sich über Kryptowährungen bezahlen zu lassen
-+ einzigste Währung/Bezahlung im Torbrowser (Bsp.: Hacker, Auftragsmörder, Waffen, Drogen, ….)
++ einzige Währung/Bezahlung im Torbrowser (Bsp.: Hacker, Auftragsmörder, Waffen, Drogen, ….)
 
 # Quellen:
 ## Ethische Probleme
@@ -45,4 +45,4 @@ https://www.randombrick.de/wofuer-lassen-sich-bitcoin-verwenden/
 https://www.bmf.gv.at/steuern/kryptowaehrung_Besteuerung.html
 
 ## Hardwareprobleme
-eigene Meinung/logische Schlussfolgerung 
+eigene Meinung/logische Schlussfolgerung

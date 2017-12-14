@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Projekt</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://authedmine.com/lib/captcha.min.js" async></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div w3-include-html="_nav.html"></div>
+    <div class="arrow" id="left">
+      <img src="images/arrow.svg" alt="arrow left">
+    </div>
+    <div class="arrow" id="right">
+       <img src="images/arrow.svg" alt="arrow right">
+    </div>
+		<main>
+      <h1>Coinhive Funktionsübersicht</h1>
+
+      <h2> Captcha </h2>
+      <p>Coinhive bietet eine Möglichkeit der Spamregulierung, mit einer eigenen
+        Captcha-Variante. Bekannt ist dieses Prinzip von den meisten Websites,
+        die sich dadurch vor Spam schützen. So muss sich ein Nutzer bevor er
+        eine Eingabe abschickt häufig als echter Mensch verifizieren. So muss er
+        z.B. eine Zeichenfolge ablesen und eintippen oder Bilder sortieren, oder
+        einfach nur ein Häkchen setzen und ein Algorithmus prüft im Hintergund
+        ob wirklich eine Person vor dem Rechner sitzt.</p>
+
+        <div class="g-recaptcha" data-sitekey="6Lf1Bj0UAAAAANhdNT46xvMVeERjeR-5fyEHX5qB"></div>
+
+      <p>Coinhive verfolgt für ihre Captcha-Variante das sogenannte "Proof Of
+        Work Principle". So wird ein Coinminer gestartet, wenn man den Haken
+        setzt, der dann eine vordefinierte Anzahl Hashes berechnet. Das benötigt
+        Zeit und Rechenleistung, was die Seite für Spammer unattraktiv macht.
+      </p>
+
+      <div class="coinhive-captcha" data-hashes="512" data-key="5go5d5lab9fVD0wX0H5zGO8hpRZT1aAX">
+    		<em>Loading Captcha...<br>
+    		If it doesn't load, please disable Adblock!</em>
+    	</div>
+
+      <h2> Link Forwarding </h2>
+      <p>Um eine lange URL zu kürzen, um sie z.B in einem Forum oder Tweet zu
+        veröffentlichen, wo nur eine begrenzte Anzahl an Zeichen zur Verfügung
+        steht, kann man einen sogenannten Shortlinkservice benutzen. Coinhive
+        kürzt die URLs und leitet sie über eine eigene Seite weiter, wo ein
+        Coinminer gestartet wird und der Nutzer erst auf die eigentliche Zielseite
+        gleitet wird wenn eine bestimmte Anzahl Hashes berechnet wurde. So ist es
+        möglich für den Linkbetreiber Geld zu verdienen.
+      </p>
+
+      <h3>Beispiel:</h3>
+      <p>Ein normaler Link auf die Internetseite der HTWK:</p>
+      <a href="http://www.htwk-leipzig.de/startseite/">https://www.htwk-leipzig.de/startseite/</a>
+      <br>
+      <p>Der von Coinhive erzeugte Shortlink, mit Weiterleitung:</p>
+      <a href="http://cnhv.co/myac">cnhv.co/myac</a>
+
+      <h2> JavaScript Miner </h2>
+      <p>
+        Coinhive bietet die Möglichkeit einen JavaScript Miner im Hintergund
+        einer Webseite laufen zu lassen, den der Websitebetreiber frei
+        konfigurieren kann.
+      </p>
+      <p>Folgende Parameter können eingestellt werden:</p>
+      <ul>
+        <li>Anzahl der CPU-Threads, die für die Berechnungen zur Verfügung stehen</li>
+        <li>Wert der Threaddrosselung</li>
+        <li>Ob das AutoThreads-Feature, zur optimalen Nutzung der Rechenleistung, aktiviert werden soll</li>
+      </ul>
+
+      <h3>GUI</h3>
+      <p>
+        Coinhive bietet ein vorgefertigtes GUI zur einfachen Einbindung in die
+        Website, mit der der Miner bedient werden kann.
+      </p>
+      <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+      <div class="coinhive-miner"
+      	style="width: 256px; height: 310px"
+      	data-key="5go5d5lab9fVD0wX0H5zGO8hpRZT1aAX">
+      	<em>Loading...</em>
+      </div>
+
+      <h3>HTTP API</h3>
+      <p>Coinhive bietet mit einer eingenen API eine Möglichket den Coinminer
+        besser in eine Webapplikation einzubinden. So ist es z.B. möglich die
+        Hashrate für Nutzeraccounts auszulesen und diese in besondere Leistungen
+        umzuwandeln, wie z.B eine imaginäre Währung, oder Werbefreie Zeit.
+      </p>
+
+      <p>Die API sollte dabei ausschließlich serverseitig (z.B.: PHP, Ruby on
+        Rails, NodeJS, etc.) verwendet werden, da sonst sensible Informationen
+        preisgegeben werden können.
+      </p>
+
+		</main>
+		<div w3-include-html="_footer.html"></div>
+    <script>
+      w3.includeHTML();
+    </script>
+  </body>
+</html>

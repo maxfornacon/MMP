@@ -1,4 +1,4 @@
-#Vorteile
+# Vorteile
 * nervige Werbeeinblendungen können vermieden werden
 * bietet zahlreiche neue Möglichkeiten der Monetarisierung für Webprojekte
 * Zur Zeit steigt der Wert von Monero, wodurch das Mining ertragreicher wird
