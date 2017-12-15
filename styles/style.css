@@ -11,7 +11,7 @@ html, body {
 main {
 	margin: 0 auto;
 	max-width: 60em;
-	padding: 0 30px;
+	padding: 0 60px;
 	color: #24292e;
 	min-height: calc(100% - 100px);
 }
@@ -36,4 +36,43 @@ h3 {
 p {
 	font-size: 16px;
 	line-height: 1.4;
+}
+
+.arrow {
+	position: fixed;
+	top: calc(50% - 25px);
+	height: 50px;
+}
+
+.arrow:hover {
+	cursor: pointer;
+	background: #f3f3f3;
+	border-radius: 2px;
+}
+.arrow img {
+	height: 50px;
+}
+
+#left {
+	transform: rotateY(180deg);
+	left: calc((100% - 75em) / 2);
+}
+
+#right {
+	right: calc((100% - 75em) / 2);
+}
+
+@media (max-width: 1150px) {
+	#left {
+		left: 5px;
+	}
+
+	#right {
+		right: 5px;
+	}
+}
+
+.g-recaptcha, .coinhive-captcha, .coinhive-miner {
+	width: 303px;
+	margin: 30px auto;
 }
