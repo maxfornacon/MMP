@@ -13,21 +13,17 @@ window.onload = function() {
   for(var i = 0; i < sites.length; i++){
     if(pathname == sites[i]){
       currentSiteIndex = i;
-      console.log(currentSiteIndex);
-      console.log(currentSiteIndex - 1);
     }
   }
 };
 function previous() {
-  console.log("previous");
-  if(currentSiteIndex - 1 > 0){
+  if(currentSiteIndex > 0){
     window.location.href = sites[currentSiteIndex - 1];
   } else {
-    window.location.href = sites[sites.length];
+    window.location.href = sites[sites.length - 1];
   }
 }
 function next() {
-  console.log("next");
   if(currentSiteIndex + 1 < sites.length){
     window.location.href = sites[currentSiteIndex + 1];
   } else {
