@@ -8,6 +8,12 @@ html, body {
 	height: 100%
 }
 
+body {
+
+	background: linear-gradient(to bottom left, white , lightgrey) fixed;
+
+}
+
 main {
 	margin: 0 auto;
 	max-width: 60em;
