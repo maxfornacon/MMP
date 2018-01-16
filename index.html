@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="scripts/jquery-3.2.1.min.js"></script>
-		<script src="scripts/slide.js"></script>
+    <script src="scripts/barba.min.js"></script>
+    <script src="scripts/TweenMax.min.js"></script>
+    <script src="scripts/nextprev.js"></script>
   </head>
   <body>
     <div w3-include-html="_nav.html"></div>
-    <div w3-include-html="_arrows.html"></div>
-		<main>
+    <a class="arrow prev" id="left" href="#" onclick="linkLeft()">
+      <img src="images/arrow.svg" alt="arrow left">
+    </a>
+    <a class="arrow next" id="right" href="#">
+       <img src="images/arrow.svg" alt="arrow right">
+    </a>
+		<main id="barba-wrapper">
+      <div class="barba-container">
 
+      </div>
 		</main>
 		<div w3-include-html="_footer.html"></div>
     <script>
