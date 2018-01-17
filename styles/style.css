@@ -1,16 +1,12 @@
 @import url("nav.css");
 @import url("footer.css");
+@import url("home.css");
 * {
 	font-family: Helvetica;
 }
 
 html, body {
-	height: 100%
-}
-
-body {
-		background-image: url("../images/background.jpg");
-		background-size: cover;
+	height: 100%;
 }
 
 main {
@@ -18,10 +14,14 @@ main {
 	min-height: calc(100% - 100px);
 }
 
+#barba-wrapper{
+  height: 100%;
+}
+
 .barba-container {
-	margin: 20px auto;
-	max-width: 55em;
-	padding: 20px 60px;
+	margin: 0px auto;
+	max-width: 60em;
+	padding: 0px 60px;
 	background-color: white;
 }
 
