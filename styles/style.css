@@ -9,6 +9,8 @@ html, body {
 }
 
 body {
+		background-image: url("../images/background.jpg");
+		background-size: cover;
 }
 
 main {
@@ -17,10 +19,10 @@ main {
 }
 
 .barba-container {
-	margin: 0 auto;
-	max-width: 60em;
-	padding: 0 60px;
-	background: white;
+	margin: 20px auto;
+	max-width: 55em;
+	padding: 20px 60px;
+	background-color: white;
 }
 
 h1, h2, h3 {
