@@ -3,13 +3,19 @@
   height: 100%;
   width: 100%;
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#chart-wrapper{
+  max-width: 100em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .chart {
   width: 300px;
   height: 300px;
-  display: block;
-
 }
 
 .chart canvas {
