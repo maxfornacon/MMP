@@ -3,14 +3,26 @@
   height: 100%;
   width: 100%;
   max-width: 100%;
-  display: flex;
-  justify-content: center;
+}
+
+#home h1 {
+  font-size: 80px;
+  margin: 0;
+  border: none;
+  position: absolute;
+  left: 20%;
 }
 
 #chart-wrapper{
-  max-width: 100em;
+  width: 60%;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1150px;
+
+  position: absolute;
+  left: 20%;
+  top: 200px;
 }
 
 .chart {
@@ -20,4 +32,9 @@
 
 .chart canvas {
   height: 200px;
+}
+
+.chart-svg {
+  position: absolute;
+  top: 400px;
 }
