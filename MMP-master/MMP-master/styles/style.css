@@ -1,0 +1,88 @@
+@import url("nav.css");
+@import url("footer.css");
+* {
+	font-family: Helvetica;
+}
+
+html, body {
+	height: 100%
+}
+
+body {
+		background-image: url("../images/background.jpg");
+		background-size: cover;
+}
+
+main {
+	color: #24292e;
+	min-height: calc(100% - 100px);
+}
+
+.barba-container {
+	margin: 20px auto;
+	max-width: 55em;
+	padding: 20px 60px;
+	background-color: white;
+}
+
+h1, h2, h3 {
+	padding-bottom: 0.3em;
+
+}
+h1, h2 {
+	border-bottom: 1px solid #eaecef;
+}
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+p {
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.arrow {
+	position: fixed;
+	top: calc(50% - 25px);
+	height: 50px;
+}
+
+.arrow:hover {
+	cursor: pointer;
+	background: #f3f3f3;
+	border-radius: 2px;
+}
+.arrow img {
+	height: 50px;
+}
+
+#left {
+	transform: rotateY(180deg);
+	left: calc((100% - 75em) / 2);
+}
+
+#right {
+	right: calc((100% - 75em) / 2);
+}
+
+@media (max-width: 1150px) {
+	#left {
+		left: 5px;
+	}
+
+	#right {
+		right: 5px;
+	}
+}
+
+.g-recaptcha, .coinhive-captcha, .coinhive-miner {
+	width: 303px;
+	margin: 30px auto;
+}

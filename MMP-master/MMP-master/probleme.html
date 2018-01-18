@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Projekt</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/barba.min.js"></script>
+    <script src="scripts/TweenMax.min.js"></script>
+    <script src="scripts/nextprev.js"></script>
+
+  </head>
+  <body>
+    <div w3-include-html="_nav.html"></div>
+    <a class="arrow prev" id="left" href="#" onclick="linkLeft()">
+      <img src="images/arrow.svg" alt="arrow left">
+    </a>
+    <a class="arrow next" id="right" href="#">
+       <img src="images/arrow.svg" alt="arrow right">
+    </a>
+
+		<main id="barba-wrapper">
+      <div class="barba-container">
+        <h1> Ethische Probleme </h1>
+
+        <span class="zitat">
+          "Kryptowährungen sind das, was die Leute darüber denken, verändern aber
+          gleichzeitig das, was die Leute über andere Dinge denken."</span>
+        <p>
+          Kryptowährungen besitzen viele vorteilhafte Effekte, allerdings wahrscheinlich auch genauso viele negative.<br>
+          Ein guter Vergleich wäre die Anfangszeit des Internets, dort gab viele Fürsprecher, im Gegenzug aber auch Leute die gegen diesen noch unbekannten
+          Fortschritt waren.<br>
+          ----------<br>
+          Fazit:<br>
+          Die ethische Frage ist eine Thematik die sich über Wirtschaft, Soziales, Kultur und Informatik erstreckt, und jeder muss für sich selbst bestimmen wie er mit diesem Thema umgeht.
+        </p>
+
+        <h1>Rechtslage</h1>
+        <p>
+          Die Rechtslage im Zusammenhang mit virtueller Währung, die auch Kryptowährung genannt wird, unterliegt einem ständigen Wandel.<br>
+          Derzeit gibt es zum Handel sowie Mining keine konkreten allgemeinen Regelungen.<br>
+          Das liegt unter anderem daran, dass die Bezahlung mit Bitcoins „eigentlich“ der Steuerpflicht unterliegt aber kaum bis gar nicht nachvollziehbar ist, da alles anonym von statten geht.<br>
+          Die Ausnahme bilden sehr wenige Geschäftsmodelle die von diesen Kryptowährungen „leben“.<br>
+          Unter www.fma.gv.at gibt es Regelungen/Gesetze für diese Unternehmenskonzepte.<br>
+        </p>
+      </div>
+		</main>
+		<div w3-include-html="_footer.html"></div>
+    <script>
+      w3.includeHTML();
+    </script>
+  </body>
+</html>
