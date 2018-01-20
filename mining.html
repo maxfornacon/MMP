@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Projekt</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/barba.min.js"></script>
+    <script src="scripts/TweenMax.min.js"></script>
+    <script src="scripts/nextprev.js"></script>
+  </head>
+  <body>
+    <div w3-include-html="_nav.html"></div>
+    <a class="arrow prev" id="left" href="#" onclick="linkLeft()">
+      <img src="images/arrow.svg" alt="arrow left">
+    </a>
+    <a class="arrow next" id="right" href="#">
+       <img src="images/arrow.svg" alt="arrow right">
+    </a>
+
+		<main id="barba-wrapper">
+      <div class="barba-container">
+  			<h1>Das Schürfen von Kryptowährungen</h1>
+
+        <p>
+          Da Kryptowährungen komplexe, rechenintensive Algorithmen erfüllen müssen, bedarf es
+           meist Computer mit spezieller Hardware. Diese sogenannten Mining Rigs bestehen dazu
+           meist aus mehreren parallel betriebene Grafikkarten. </br>
+            Da die Mining Rigs sehr stromhungrig sind, ist es je nach Zeit und Ort möglich, dass
+            die Stromkosten höher sind als der Profit durch das errechnete Geld. Es lohnt sich zum
+            Beispiel sehr viel mehr, ein Mining Rig in den USA aufzustellen, als in Deutschland, da
+            die Strompreise in Deutschland mehr als doppelt so hoch sind.
+          </p>
+        <p>
+          Diese Mining Rigs koordinieren zudem das Geld, da es keine zentrale Bank gibt, welche dies
+           normalerweise tun würde. Daher hat man bei der Kryptowährung ein dezentrales Geldsystem.
+           Eine Folge dessen ist eine sehr hohe Sicherheit der Kryptowährung: Werden zum Beispiel
+           Bitcoins überwiesen, wird das von jedem Mining Rig registriert und überprüft. Ein Hacker
+           müsste also alle Mining Rigs hacken, damit der Fehler nicht bemerkt wird.
+         </p>
+        <p>
+          Das Kryptogeld lässt sich gut mit einer Goldmine vergleichen. Bei beiden ist der Vorrat
+          begrenzt und je mehr Coins/Gold man hat, desto schwerer wird es mehr zu finden. Daher
+          kommen die Begriffe Mining Rigs und Miner, da diese quasi das Kryptogeld/Gold abbauen.
+        </p>
+		</main>
+		<div w3-include-html="_footer.html"></div>
+    <script>
+      w3.includeHTML();
+    </script>
+  </body>
+</html>
