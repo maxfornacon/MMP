@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Projekt</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/barba.min.js"></script>
+    <script src="scripts/TweenMax.min.js"></script>
+    <script src="scripts/nextprev.js"></script>
+  </head>
+  <body>
+    <div w3-include-html="_nav.html"></div>
+    <a class="arrow prev" id="left" href="#" onclick="linkLeft()">
+      <img src="images/arrow.svg" alt="arrow left">
+    </a>
+    <a class="arrow next" id="right" href="#">
+       <img src="images/arrow.svg" alt="arrow right">
+    </a>
+
+		<main id="barba-wrapper">
+      <div class="barba-container">
+  			<h1> Coinhive </h1>
+  			<p>
+  				Coinhive bietet eine Alternative zur klassischen Werbung. So lassen sich
+  				Websites monetarisieren, ohne, dass der Nutzer durch nervige
+  				Werbeeinblendungen gestört wird.
+  			</p>
+
+  			<p>
+  				Coinhive stellt dazu ein JavaScript Miner für die Kryptowährung Monero zu
+  				Verfügung, den der Websitebetreiber sehr einfach einbinden kann.<br/>
+  				Sollte nun die Seite in einem Browser aufgerufen werden, wird dieser Miner
+  				im Hintergrund gestartet und beginnt mit der CPU Power des Rechners, von
+  				der die Seite aufgerufen wird Hashes zu errechnen.
+  			</p>
+
+  			<p>
+  				Sollte nun ein Hash gefunden werden, der den Anforderungen des Algorithmus
+  				entspricht wird dessen Wert als Monero auf das Coinhive-Konto gutgeschrieben. <br/>
+  				Sobald man dort 0.5 XMR (Abkürzung für Monero) angesammelt hat kann man
+  				sich diesen Betrag auf das eigene XMR-Depot auszahlen lassen. Von dort
+  				steht es für Transaktionen zur Verfügung.
+  			</p>
+
+  			<h2> Möglichkeiten </h2>
+  			<p>
+  				Es gibt zahlreiche Möglichkeiten einen solchen Kryptominer in ein
+  				Webprojekt einzuarbeiten.
+  			</p>
+
+  			<p>Coinhive beschreibt auf ihrere eigenen Website einige Einsatzmöglichkeiten:</p>
+
+  			<p>
+  				So kann z.B eine Werbefreie Nutzung der Website ermöglicht werden oder
+  				Ausgedehnte Wartezeiten in Onlinegames könnten durch Hashberechnungen
+  				ersetzt werden.
+  			</p>
+
+  			<p>
+  				Natürlich stehen jedem Seitenbetreiber durch die API zahlreiche
+  				Möglichkeiten zur Verfügung eine eigene Strategie zur Nutzung des Miners
+  				zu entwickeln.
+  			</p>
+      </div>
+		</main>
+		<div w3-include-html="_footer.html"></div>
+    <script>
+      w3.includeHTML();
+    </script>
+  </body>
+</html>

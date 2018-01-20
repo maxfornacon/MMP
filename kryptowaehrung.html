@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Projekt</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/barba.min.js"></script>
+    <script src="scripts/TweenMax.min.js"></script>
+    <script src="scripts/nextprev.js"></script>
+  </head>
+  <body>
+    <div w3-include-html="_nav.html"></div>
+    <a class="arrow prev" id="left" href="#" onclick="linkLeft()">
+      <img src="images/arrow.svg" alt="arrow left">
+    </a>
+    <a class="arrow next" id="right" href="#">
+       <img src="images/arrow.svg" alt="arrow right">
+    </a>
+
+		<main id="barba-wrapper">
+      <div class="barba-container">
+  			<h1>Kryptowährung – Was ist das?</h1>
+
+        <p>
+          Unter dem Begriff Kryptowährung versteht man digitales Geld. Da es nicht durch Zentralbanken
+          gewirtschaftet wird, ist die Kryptowährung kein gesetzlich anerkanntes Zahlungsmittel. Daher
+          wird auch oft die Bezeichnung Kryptogeld benutzt.
+        </p>
+        <p>Der Begriff Kryptowährung lässt sich von der Kryptographie herleiten, welche die Wissenschaft
+          der Verschlüsselung von Informationen ist. Das verschlüsselte Geld wird von Computern errechnet,
+          wobei es den Bedingungen eines vorgegebenen Algorithmus (Hash-Algorithmus) erfüllen muss. Dadurch
+          kann nicht wie bei Banken nach Belieben „gedruckt“, sondern nur durch zeitintensive Computerberechnung
+          das Geld erstellt werden. Zudem ist die Menge des möglichen Geldes begrenzt, was zu einer geringeren
+           Wahrscheinlichkeit einer Inflation durch Gelddruck führt.
+         </p>
+
+        <h2>bekannte Kryptowährungen</h2>
+        
+        <p>
+          Der Bitcoin ist die zuerst entstandene Kryptowährung und dadurch die wohl bekannteste. Durch seinen
+          Algorithmus können maximal 21 Millionen Bitcoins geschürft werden. Allerdings kann jeder Bitcoin in
+          mehrere, kleinere Teile zerlegt werden. Diese heißen dann nach ihrem Gründer benannt Satoshi.
+        </p>
+        <p>
+          Nach dem Bitcoin sind allerdings noch viele weitere Kryptowährungen entwickelt wurden. Heutzutage
+          gibt es über 4500 Verschiedene. Eine weitere sehr erfolgreiche Kryptowährung ist Monero (heißt Münze
+          auf Esperanto). Diese wurde im April 2014 gestartet und wollte eine Alternative zu dem Bitcoin darstellen.
+          Dazu hatte es, ähnlich dem Bitcoin, Eigenschaften wie Datenschutz, Dezentralisierung und eine obere
+          Mengengrenze.
+        </p>
+        <p>Monero hat einige Unterschiede zum Bitcoin: Monero verwendet das CryptoNote Protokoll, wodurch sich
+          die Berechnung zum Bitcoin stark unterscheidet. Monero ist dadurch zwar speicherintensiver, kann aber
+           auch besser mit durchschnittscomputer berechnet werden. Außerdem kann Monero sehr viel kleiner geteilt
+           werden. Monero liegt trotz der Vorteile mit einer Marktkapitalisierung von ca. 109.000 Millionen US-Dollar
+           hinter dem Bitcoin, welches eine fast doppelt so hohe Marktkapitalisierung hat.
+         </p>
+		</main>
+		<div w3-include-html="_footer.html"></div>
+    <script>
+      w3.includeHTML();
+    </script>
+  </body>
+</html>
