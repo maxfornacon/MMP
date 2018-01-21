@@ -1,5 +1,4 @@
 @import url("nav.css");
-@import url("footer.css");
 @import url("home.css");
 * {
 	font-family: Helvetica;
@@ -14,20 +13,17 @@ main {
 	min-height: calc(100% - 100px);
 }
 
-#barba-wrapper{
+.sliderDiv {
+  display: none;
+  margin: 0px auto;
+  max-width: 60em;
+  background-color: white;
   height: 100%;
-}
-
-.barba-container {
-	margin: 0px auto;
-	max-width: 60em;
-	background-color: white;
-  height: 100%;
+  margin-top: 100px;
 }
 
 h1, h2, h3 {
 	padding-bottom: 0.3em;
-
 }
 h1, h2 {
 	border-bottom: 1px solid #eaecef;
@@ -85,4 +81,11 @@ p {
 .g-recaptcha, .coinhive-captcha, .coinhive-miner {
 	width: 303px;
 	margin: 30px auto;
+}
+
+
+#slideIn {
+  position: absolute;
+  right: -100%;
+
 }

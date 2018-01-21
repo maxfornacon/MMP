@@ -6,111 +6,273 @@
     <title>Multimedia Projekt</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
+
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/barba.min.js"></script>
-    <script src="scripts/TweenMax.min.js"></script>
-    <script src="scripts/nextprev.js"></script>
+    <script src="https://authedmine.com/lib/captcha.min.js" async></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+    <script src="scripts/slide.js"></script>
   </head>
   <body>
     <div w3-include-html="_nav.html"></div>
-    <a class="arrow prev" id="left" href="#" onclick="linkLeft()">
-      <img src="images/arrow.svg" alt="arrow left">
-    </a>
-    <!--<a class="arrow next" id="right" href="#">
-       <img src="images/arrow.svg" alt="arrow right">
-    </a>-->
-		<main id="barba-wrapper">
-      <div class="barba-container" id="home-wrapper">
-        <div id="home">
-          <h1>Kryptowährungen</h1>
-          <h2>Ein Multimediaprojekt von</h2>
-          <ul id="names">
-            <li><h2>Maximilian Fornaçon</h2></li>
-            <li><h2>Johann Gerhardt</h2></li>
-            <li><h2>Felix Dittrich</h2></li>
-          </ul>
+    <div w3-include-html="_arrows.html"></div>
 
-          <a href="#" class="arrow next button" id="right">
-            <span>Start</span>
-            <img src="images/arrow.svg" alt="arrow right">
-          </a>
-          <div id="chart-wrapper">
-            <div class="chart">
-              <script type="text/javascript">
-                baseUrl = "https://widgets.cryptocompare.com/";
-                var scripts = document.getElementsByTagName("script");
-                var embedder = scripts[ scripts.length - 1 ];
-                var cccTheme = {"General":{"background":"#5678d8","borderWidth":"0px","borderColor":"#5678d8","borderRadius":"4px 4px 0 0"},"Header":{"background":"#5678d8","color":"#FFF","displayFollowers":false},"Followers":{"background":"#5678d8","color":"#5678d8","borderColor":"#5678d8","counterBorderColor":"#5678d8","counterColor":"#5678d8"},"Data":{"priceColor":"#FFF","infoLabelColor":"#CCC","infoValueColor":"#CCC"},"Chart":{"fillColor":"rgba(86,202,158,0.8)","borderColor":"#56ca9e"},"Trend":{"colorUp":"rgba(86,202,158,1)","colorDown":"rgb(202, 86, 86)","colorUnchanged":"rgba(0, 0, 0, 0.56)"},"Conversion":{"background":"#000","color":"#999"}};
-                (function (){
-                var appName = encodeURIComponent(window.location.hostname);
-                if(appName==""){appName="local";}
-                var s = document.createElement("script");
-                s.type = "text/javascript";
-                s.async = true;
-                var theUrl = baseUrl+'serve/v1/coin/chart?fsym=BTC&tsym=EUR';
-                s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                embedder.parentNode.appendChild(s);
-                })();
-              </script>
-            </div>
-            <div class="chart">
-              <script type="text/javascript">
-                baseUrl = "https://widgets.cryptocompare.com/";
-                var scripts = document.getElementsByTagName("script");
-                var embedder = scripts[ scripts.length - 1 ];
-                var cccTheme = {"General":{"background":"#5678d8","borderWidth":"0px","borderColor":"#5678d8","borderRadius":"4px 4px 0 0"},"Header":{"background":"#5678d8","color":"#FFF","displayFollowers":false},"Followers":{"background":"#5678d8","color":"#5678d8","borderColor":"#5678d8","counterBorderColor":"#5678d8","counterColor":"#5678d8"},"Data":{"priceColor":"#FFF","infoLabelColor":"#CCC","infoValueColor":"#CCC"},"Chart":{"fillColor":"rgba(86,202,158,0.8)","borderColor":"#56ca9e"},"Trend":{"colorUp":"rgba(86,202,158,1)","colorDown":"rgb(202, 86, 86)","colorUnchanged":"rgba(0, 0, 0, 0.56)"},"Conversion":{"background":"#000","color":"#999"}};
-                (function (){
-                var appName = encodeURIComponent(window.location.hostname);
-                if(appName==""){appName="local";}
-                var s = document.createElement("script");
-                s.type = "text/javascript";
-                s.async = true;
-                var theUrl = baseUrl+'serve/v1/coin/chart?fsym=XMR&tsym=EUR';
-                s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                embedder.parentNode.appendChild(s);
-                })();
-              </script>
-            </div>
-            <div class="chart">
-              <script type="text/javascript">
-                baseUrl = "https://widgets.cryptocompare.com/";
-                var scripts = document.getElementsByTagName("script");
-                var embedder = scripts[ scripts.length - 1 ];
-                var cccTheme = {"General":{"background":"#5678d8","borderWidth":"0px","borderColor":"#5678d8","borderRadius":"4px 4px 0 0"},"Header":{"background":"#5678d8","color":"#FFF","displayFollowers":false},"Followers":{"background":"#5678d8","color":"#5678d8","borderColor":"#5678d8","counterBorderColor":"#5678d8","counterColor":"#5678d8"},"Data":{"priceColor":"#FFF","infoLabelColor":"#CCC","infoValueColor":"#CCC"},"Chart":{"fillColor":"rgba(86,202,158,0.8)","borderColor":"#56ca9e"},"Trend":{"colorUp":"rgba(86,202,158,1)","colorDown":"rgb(202, 86, 86)","colorUnchanged":"rgba(0, 0, 0, 0.56)"},"Conversion":{"background":"#000","color":"#999"}};
-                (function (){
-                var appName = encodeURIComponent(window.location.hostname);
-                if(appName==""){appName="local";}
-                var s = document.createElement("script");
-                s.type = "text/javascript";
-                s.async = true;
-                var theUrl = baseUrl+'serve/v1/coin/chart?fsym=ETH&tsym=EUR';
-                s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                embedder.parentNode.appendChild(s);
-                })();
-              </script>
-            </div>
+    <div id="home" class="sliderDiv">
+      <h1>Kryptowährungen</h1>
+      <h2>Ein Multimediaprojekt von</h2>
+      <ul id="names">
+        <li><h2>Maximilian Fornaçon</h2></li>
+        <li><h2>Johann Gerhardt</h2></li>
+        <li><h2>Felix Dittrich</h2></li>
+      </ul>
+      <div class="arrow next button" id="right" onclick="next()">
+        <span>Start</span>
+        <img src="images/arrow.svg" alt="arrow right">
+      </div>
+      <div id="chart-wrapper">
+        <div class="chart">
+          <script type="text/javascript">
+            baseUrl = "https://widgets.cryptocompare.com/";
+            var scripts = document.getElementsByTagName("script");
+            var embedder = scripts[ scripts.length - 1 ];
+            var cccTheme = {"General":{"background":"#5678d8","borderWidth":"0px","borderColor":"#5678d8","borderRadius":"4px 4px 0 0"},"Header":{"background":"#5678d8","color":"#FFF","displayFollowers":false},"Followers":{"background":"#5678d8","color":"#5678d8","borderColor":"#5678d8","counterBorderColor":"#5678d8","counterColor":"#5678d8"},"Data":{"priceColor":"#FFF","infoLabelColor":"#CCC","infoValueColor":"#CCC"},"Chart":{"fillColor":"rgba(86,202,158,0.8)","borderColor":"#56ca9e"},"Trend":{"colorUp":"rgba(86,202,158,1)","colorDown":"rgb(202, 86, 86)","colorUnchanged":"rgba(0, 0, 0, 0.56)"},"Conversion":{"background":"#000","color":"#999"}};
+            (function (){
+            var appName = encodeURIComponent(window.location.hostname);
+            if(appName==""){appName="local";}
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            var theUrl = baseUrl+'serve/v1/coin/chart?fsym=BTC&tsym=EUR';
+            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+            embedder.parentNode.appendChild(s);
+            })();
+          </script>
+        </div>
+        <div class="chart">
+          <script type="text/javascript">
+            baseUrl = "https://widgets.cryptocompare.com/";
+            var scripts = document.getElementsByTagName("script");
+            var embedder = scripts[ scripts.length - 1 ];
+            var cccTheme = {"General":{"background":"#5678d8","borderWidth":"0px","borderColor":"#5678d8","borderRadius":"4px 4px 0 0"},"Header":{"background":"#5678d8","color":"#FFF","displayFollowers":false},"Followers":{"background":"#5678d8","color":"#5678d8","borderColor":"#5678d8","counterBorderColor":"#5678d8","counterColor":"#5678d8"},"Data":{"priceColor":"#FFF","infoLabelColor":"#CCC","infoValueColor":"#CCC"},"Chart":{"fillColor":"rgba(86,202,158,0.8)","borderColor":"#56ca9e"},"Trend":{"colorUp":"rgba(86,202,158,1)","colorDown":"rgb(202, 86, 86)","colorUnchanged":"rgba(0, 0, 0, 0.56)"},"Conversion":{"background":"#000","color":"#999"}};
+            (function (){
+            var appName = encodeURIComponent(window.location.hostname);
+            if(appName==""){appName="local";}
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            var theUrl = baseUrl+'serve/v1/coin/chart?fsym=XMR&tsym=EUR';
+            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+            embedder.parentNode.appendChild(s);
+            })();
+          </script>
+        </div>
+        <div class="chart">
+          <script type="text/javascript">
+            baseUrl = "https://widgets.cryptocompare.com/";
+            var scripts = document.getElementsByTagName("script");
+            var embedder = scripts[ scripts.length - 1 ];
+            var cccTheme = {"General":{"background":"#5678d8","borderWidth":"0px","borderColor":"#5678d8","borderRadius":"4px 4px 0 0"},"Header":{"background":"#5678d8","color":"#FFF","displayFollowers":false},"Followers":{"background":"#5678d8","color":"#5678d8","borderColor":"#5678d8","counterBorderColor":"#5678d8","counterColor":"#5678d8"},"Data":{"priceColor":"#FFF","infoLabelColor":"#CCC","infoValueColor":"#CCC"},"Chart":{"fillColor":"rgba(86,202,158,0.8)","borderColor":"#56ca9e"},"Trend":{"colorUp":"rgba(86,202,158,1)","colorDown":"rgb(202, 86, 86)","colorUnchanged":"rgba(0, 0, 0, 0.56)"},"Conversion":{"background":"#000","color":"#999"}};
+            (function (){
+            var appName = encodeURIComponent(window.location.hostname);
+            if(appName==""){appName="local";}
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            var theUrl = baseUrl+'serve/v1/coin/chart?fsym=ETH&tsym=EUR';
+            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+            embedder.parentNode.appendChild(s);
+            })();
+          </script>
+        </div>
 
-          </div>
-        <img src="images/arrow.svg" alt="arrow_down" id="arrow_down">
       </div>
-        <svg viewBox="0 0 3600 1500" class="chart-svg">
-          <polyline fill="white" stroke="#56ca9e" stroke-width="20"
-            points="
-              -10,1500
-              300,1200
-              390,1290
-              990,750
-              1290,1050
-              3300,15
-              3610,450
-              3610,1510
-              00,1510
-             "/>
-        </svg>
+      <img src="images/arrow.svg" alt="arrow_down" id="arrow_down">
+      <svg viewBox="0 0 3600 1500" class="chart-svg">
+        <polyline fill="white" stroke="#56ca9e" stroke-width="20"
+          points="
+            -10,1500
+            300,1200
+            390,1290
+            990,750
+            1290,1050
+            3300,15
+            3610,450
+            3610,1510
+            00,1510
+           "/>
+      </svg>
+    </div>
+    <div id="kryptowaehrung" class="sliderDiv" >
+    	<h1>Kryptowährung – Was ist das?</h1>
+
+      <p>Unter dem Begriff Kryptowährung versteht <br/>man <br/>digitales Geld. Da es nicht durch Zentralbanken gewirtschaftet wird, ist die Kryptowährung kein gesetzlich anerkanntes Zahlungsmittel.
+        Daher wird auch oft die Bezeichnung Kryptogeld benutzt. Der Begriff Kryptowährung lässt sich von der Kryptographie herleiten, welche die Wissenschaft der Verschlüsselung von Informationen ist.
+        Das verschlüsselte Geld wird von Computern errechnet, wobei es den Bedingungen eines vorgegebenen Algorithmus (Hash-Algorithmus) erfüllen muss.
+        Dadurch kann nicht wie bei Banken nach Belieben „gedruckt“, sondern nur durch zeitintensive Computerberechnung das Geld erstellt werden.
+        Zudem ist die Menge des möglichen Geldes begrenzt, was zu einer geringeren Wahrscheinlichkeit einer Inflation durch Gelddruck führt.
+        Heutzutage existieren über 3000 verschiedene Kryptowährungen. Die wohl bekannteste ist der „Bitcoin“. </p>
+
+      <p>Um möglichst schnell und effizient die einzelnen Coins der Kryptowährung zu berechnen, sind die Computer meist mit spezieller Hardware ausgestattet.
+        Diese sogenannten Mining Rigs bestehen dazu meist aus mehreren parallelbetriebenen Grafikkarten. <br/>
+        Da die Mining Rigs sehr stromhungrig sind, ist es je nach Zeit und Ort möglich, dass die Stromkosten höher sind als der Profit durch das errechnete Geld.
+        Es lohnt sich zum Beispiel sehr viel mehr, ein Mining Rig in den USA aufzustellen, als in Deutschland, da die Strompreise in Deutschland mehr als doppelt so hoch sind.
+        Diese Mining Rigs koordinieren zudem das Geld, da es keine zentrale Bank gibt, welche dies normalerweise tun würde. Daher hat man bei der Kryptowährung ein dezentrales Geldsystem.
+        Eine Folge dessen ist eine sehr hohe Sicherheit der Kryptowährung: Werden zum Beispiel Bitcoins überwiesen, wird das von jedem Mining Rig registriert und überprüft.
+        Ein Hacker müsste also alle Mining Rigs hacken, damit der Fehler nicht bemerkt wird.</p>
+
+      <p>Das Kryptogeld lässt sich gut mit einer Goldmine vergleichen.
+        Bei beiden ist der Vorrat begrenzt und je mehr Coins/Gold man hat, desto schwerer wird es mehr zu finden.
+        Daher kommen die Begriffe Mining Rigs und Miner, da diese quasi das Kryptogeld/Gold abbauen.</p>
+    </div>
+    <div id="coinhive" class="sliderDiv">
+    	<h1> Coinhive </h1>
+    	<p>
+    		Coinhive bietet eine Alternative zur klassischen Werbung. So lassen sich
+    		Websites monetarisieren, ohne, dass der Nutzer durch nervige
+    		Werbeeinblendungen gestört wird.
+    	</p>
+
+    	<p>
+    		Coinhive stellt dazu ein JavaScript Miner für die Kryptowährung Monero zu
+    		Verfügung, den der Websitebetreiber sehr einfach einbinden kann.<br/>
+    		Sollte nun die Seite in einem Browser aufgerufen werden, wird dieser Miner
+    		im Hintergrund gestartet und beginnt mit der CPU Power des Rechners, von
+    		der die Seite aufgerufen wird Hashes zu errechnen.
+    	</p>
+
+    	<p>
+    		Sollte nun ein Hash gefunden werden, der den Anforderungen des Algorithmus
+    		entspricht wird dessen Wert als Monero auf das Coinhive-Konto gutgeschrieben. <br/>
+    		Sobald man dort 0.5 XMR (Abkürzung für Monero) angesammelt hat kann man
+    		sich diesen Betrag auf das eigene XMR-Depot auszahlen lassen. Von dort
+    		steht es für Transaktionen zur Verfügung.
+    	</p>
+
+    	<h2> Möglichkeiten </h2>
+    	<p>
+    		Es gibt zahlreiche Möglichkeiten einen solchen Kryptominer in ein
+    		Webprojekt einzuarbeiten.
+    	</p>
+
+    	<p>Coinhive beschreibt auf ihrere eigenen Website einige Einsatzmöglichkeiten:</p>
+
+    	<p>
+    		So kann z.B eine Werbefreie Nutzung der Website ermöglicht werden oder
+    		Ausgedehnte Wartezeiten in Onlinegames könnten durch Hashberechnungen
+    		ersetzt werden.
+    	</p>
+
+    	<p>
+    		Natürlich stehen jedem Seitenbetreiber durch die API zahlreiche
+    		Möglichkeiten zur Verfügung eine eigene Strategie zur Nutzung des Miners
+    		zu entwickeln.
+    	</p>
+    </div>
+    <div id="funktionen" class="sliderDiv">
+      <h1>Coinhive Funktionsübersicht</h1>
+
+      <h2> Captcha </h2>
+      <p>Coinhive bietet eine Möglichkeit der Spamregulierung, mit einer eigenen
+        Captcha-Variante. Bekannt ist dieses Prinzip von den meisten Websites,
+        die sich dadurch vor Spam schützen. So muss sich ein Nutzer bevor er
+        eine Eingabe abschickt häufig als echter Mensch verifizieren. So muss er
+        z.B. eine Zeichenfolge ablesen und eintippen oder Bilder sortieren, oder
+        einfach nur ein Häkchen setzen und ein Algorithmus prüft im Hintergund
+        ob wirklich eine Person vor dem Rechner sitzt.</p>
+
+        <div class="g-recaptcha" data-sitekey="6Lf1Bj0UAAAAANhdNT46xvMVeERjeR-5fyEHX5qB"></div>
+
+      <p>Coinhive verfolgt für ihre Captcha-Variante das sogenannte "Proof Of
+        Work Principle". So wird ein Coinminer gestartet, wenn man den Haken
+        setzt, der dann eine vordefinierte Anzahl Hashes berechnet. Das benötigt
+        Zeit und Rechenleistung, was die Seite für Spammer unattraktiv macht.
+      </p>
+
+      <div class="coinhive-captcha" data-hashes="512" data-key="5go5d5lab9fVD0wX0H5zGO8hpRZT1aAX">
+    		<em>Loading Captcha...<br>
+    		If it doesn't load, please disable Adblock!</em>
+    	</div>
+
+      <h2> Link Forwarding </h2>
+      <p>Um eine lange URL zu kürzen, um sie z.B in einem Forum oder Tweet zu
+        veröffentlichen, wo nur eine begrenzte Anzahl an Zeichen zur Verfügung
+        steht, kann man einen sogenannten Shortlinkservice benutzen. Coinhive
+        kürzt die URLs und leitet sie über eine eigene Seite weiter, wo ein
+        Coinminer gestartet wird und der Nutzer erst auf die eigentliche Zielseite
+        gleitet wird wenn eine bestimmte Anzahl Hashes berechnet wurde. So ist es
+        möglich für den Linkbetreiber Geld zu verdienen.
+      </p>
+
+      <h3>Beispiel:</h3>
+      <p>Ein normaler Link auf die Internetseite der HTWK:</p>
+      <a href="http://www.htwk-leipzig.de/startseite/">https://www.htwk-leipzig.de/startseite/</a>
+      <br>
+      <p>Der von Coinhive erzeugte Shortlink, mit Weiterleitung:</p>
+      <a href="http://cnhv.co/myac">cnhv.co/myac</a>
+
+      <h2> JavaScript Miner </h2>
+      <p>
+        Coinhive bietet die Möglichkeit einen JavaScript Miner im Hintergund
+        einer Webseite laufen zu lassen, den der Websitebetreiber frei
+        konfigurieren kann.
+      </p>
+      <p>Folgende Parameter können eingestellt werden:</p>
+      <ul>
+        <li>Anzahl der CPU-Threads, die für die Berechnungen zur Verfügung stehen</li>
+        <li>Wert der Threaddrosselung</li>
+        <li>Ob das AutoThreads-Feature, zur optimalen Nutzung der Rechenleistung, aktiviert werden soll</li>
+      </ul>
+
+      <h3>GUI</h3>
+      <p>
+        Coinhive bietet ein vorgefertigtes GUI zur einfachen Einbindung in die
+        Website, mit der der Miner bedient werden kann.
+      </p>
+      <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+      <div class="coinhive-miner"
+      	style="width: 256px; height: 310px"
+      	data-key="5go5d5lab9fVD0wX0H5zGO8hpRZT1aAX">
+      	<em>Loading...</em>
       </div>
-		</main>
-		<div w3-include-html="_footer.html"></div>
+
+      <h3>HTTP API</h3>
+      <p>Coinhive bietet mit einer eingenen API eine Möglichket den Coinminer
+        besser in eine Webapplikation einzubinden. So ist es z.B. möglich die
+        Hashrate für Nutzeraccounts auszulesen und diese in besondere Leistungen
+        umzuwandeln, wie z.B eine imaginäre Währung, oder Werbefreie Zeit.
+      </p>
+
+      <p>Die API sollte dabei ausschließlich serverseitig (z.B.: PHP, Ruby on
+        Rails, NodeJS, etc.) verwendet werden, da sonst sensible Informationen
+        preisgegeben werden können.
+      </p>
+
+    </div>
+    <div id="_probleme" class="sliderDiv">
+      <h1> Ethische Probleme </h1>
+
+      <span class="zitat">"Kryptowährungen sind das, was die Leute darüber denken, verändern aber
+        gleichzeitig das, was die Leute über andere Dinge denken."</span>
+      <p>
+        Kryptowährungen besitzen viele vorteilhafte Effekte, allerdings
+        wahrscheinlich auch genauso viele negative.
+        Ein guter Vergleich wäre die Anfangszeit des Internets, dort gab viele
+        Fürsprecher, im Gegenzug aber auch Leute die gegen diesen noch unbekannten
+        Fortschritt waren.
+      </p>
+      Fazit:
+      Die ethische Frage ist eine Thematik die sich über Wirtschaft, Soziales, Kultur und Informatik erstreckt, und jeder muss für sich selbst bestimmen wie er mit diesem Thema umgeht.</p>
+
+      <h1>Rechtslage</h1>
+      <p>
+        Die Rechtslage im Zusammenhang mit virtueller Währung, die auch Kryptowährung genannt wird, unterliegt einem ständigen Wandel.
+        Derzeit gibt es zum Handel sowie Mining keine konkreten allgemeinen Regelungen.
+        Das liegt unter anderem daran, dass die Bezahlung mit Bitcoins „eigentlich“ der Steuerpflicht unterliegt aber kaum bis gar nicht nachvollziehbar ist, da alles anonym von statten geht.
+        Die Ausnahme bilden sehr wenige Geschäftsmodelle die von diesen Kryptowährungen „leben“.
+        Unter www.fma.gv.at gibt es Regelungen/Gesetze für diese Unternehmenskonzepte.
+      </p>
+    </div>
+
     <script>
       w3.includeHTML();
     </script>
