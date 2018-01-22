@@ -19,7 +19,7 @@ main {
 
 .sliderDiv {
   display: none;
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 60em;
   background-color: white;
   height: calc(100% - 100px);
@@ -90,6 +90,43 @@ p {
 .g-recaptcha, .coinhive-captcha, .coinhive-miner {
 	width: 303px;
 	margin: 30px auto;
+}
+
+.pictures {
+	width:100%;
+	max-width:700px;
+  margin: 0 auto;
+	display: block;
+}
+
+.picturerow {
+	display: flex;
+	justify-content: space-around;
+}
+
+.picturerow img {
+	float: left;
+	height: 150px;
+	margin: 0 0 15px 0;
+}
+
+.picturesleft {
+	width:100%;
+	max-width:400px;
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.picturesright {
+	width:100%;
+	max-width:400px;
+	float: right;
+	margin-left: 10px;
+}
+
+.TextnebenBild {
+	min-height: 290px;
+	vertical-align: center;
 }
 
 .slideOutLeft, .slideInFromRight, .slideOutRight, .slideInFromLeft {
