@@ -17,6 +17,7 @@ main {
 	min-height: calc(100% - 100px);
 }
 
+
 .sliderDiv {
   display: none;
   margin: 0 auto;
@@ -50,8 +51,8 @@ h2 {
 h3 {
 	font-size: 1.25em;
 }
-p {
-	font-size: 16px;
+p, li {
+	font-size: 18px;
 	line-height: 1.4;
 }
 .zitat {
