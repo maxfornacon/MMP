@@ -52,6 +52,9 @@ p {
 	font-size: 16px;
 	line-height: 1.4;
 }
+.zitat {
+	font-style: italic;
+}
 
 .arrow {
 	position: fixed;
@@ -102,11 +105,12 @@ p {
 .picturerow {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .picturerow img {
 	float: left;
-	height: 150px;
+  height: 125px;
 	margin: 0 0 15px 0;
 }
 
