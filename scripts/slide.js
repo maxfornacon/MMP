@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  sites = ["home", "kryptowaehrung", "geschichte", "mining", "probleme", "coinhive", "funktionen"];
+  sites = ["home", "kryptowaehrung", "geschichte", "mining", "probleme", "coinhive", "funktionen", "quellen"];
   currentSiteIndex = 0;
   getCurrentSite();
 

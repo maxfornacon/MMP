@@ -55,7 +55,7 @@ ul.menu li:hover ul li {
   animation: fadeIn 0.3s;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
   ul.menu {
     flex-direction: column;
   }
