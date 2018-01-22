@@ -28,9 +28,12 @@ main {
 	margin-bottom: 100px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
 	.sliderDiv{
-		padding-top: 100px;
+		padding-top: 135px;
+	}
+	footer {
+		height: 85px!important;
 	}
 }
 h1, h2, h3 {
