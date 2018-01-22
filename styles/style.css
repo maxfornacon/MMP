@@ -23,9 +23,14 @@ main {
   max-width: 60em;
   background-color: white;
   height: calc(100% - 100px);
-  padding-top: 70px;
+  padding: 70px 30px;
 }
 
+@media screen and (max-width: 500px){
+	.sliderDiv{
+		padding-top: 100px;
+	}
+}
 h1, h2, h3 {
 	padding-bottom: 0.3em;
 }
@@ -74,11 +79,11 @@ p {
 
 @media (max-width: 1150px) {
 	#left {
-		left: 5px;
+		display: none;
 	}
 
 	#right {
-		right: 5px;
+		display: none;
 	}
 }
 
