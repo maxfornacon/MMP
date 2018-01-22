@@ -21,18 +21,18 @@ document.addEventListener("DOMContentLoaded", function() {
 function next() {
   if ( currentSiteIndex + 1 < sites.length ){
     getCurrentSite();
-    ChangeUrl("TITEL", "http://127.0.0.1:3000/index.html?" + sites[currentSiteIndex + 1]);
+    ChangeUrl("TITEL", currentSite[0]+ "?" + sites[currentSiteIndex + 1]);
     currentSiteIndex++;
-    animate(document.getElementById(sites[currentSiteIndex - 1]),document.getElementById(sites[currentSiteIndex]) , "outLeft");
+    animate(document.getElementById(sites[currentSiteIndex - 1]), document.getElementById(sites[currentSiteIndex]) , "outLeft");
   }
 }
 
 function previous() {
   if (currentSiteIndex > 0){
     getCurrentSite();
-    ChangeUrl("TITEL", "http://127.0.0.1:3000/index.html?" + sites[currentSiteIndex - 1]);
+    ChangeUrl("TITEL", currentSite[0] + "?" + sites[currentSiteIndex - 1]);
     currentSiteIndex--;
-    animate(document.getElementById(sites[currentSiteIndex + 1]),document.getElementById(sites[currentSiteIndex]) , "outRight");
+    animate(document.getElementById(sites[currentSiteIndex + 1]), document.getElementById(sites[currentSiteIndex]) , "outRight");
   }
 }
 
@@ -47,8 +47,9 @@ async function animate(elem1, elem2, direction) {
     elem2.style.display = "block";
   }
   else if (direction == "outRight"){
-    elem1.classList.add("slideOutRight");
     elem2.classList.add("slideInFromLeft");
+    elem1.classList.add("slideOutRight");
+
     await sleep(500);
     elem1.style.display = "none";
     elem1.classList.remove("slideOutRight");
@@ -64,6 +65,7 @@ function sleep(ms) {
 function getCurrentSite(){
   pathname = window.location.href;
   currentSite = window.location.href.split('?');
+  console.log(currentSite[0]);
   for(var i = 0; i < sites.length; i++){
     if( currentSite[1] == sites[i]){
       currentSiteIndex = i;
@@ -79,11 +81,11 @@ function ChangeUrl(title, url) {
     divs[i].style.display = "none";
   */
   if (typeof (window.history.pushState) != "undefined") {
-      var obj = { Title: title, Url: url };
-      window.history.pushState(obj, obj.Title, obj.Url);
+    var obj = { Title: title, Url: url };
+    window.history.pushState(obj, obj.Title, obj.Url);
 
-      console.log(currentSiteIndex);
+    console.log(currentSiteIndex);
   } else {
-      alert("Browser does not support HTML5.");
+    alert("Browser does not support HTML5.");
   }
 }
