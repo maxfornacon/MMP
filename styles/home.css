@@ -115,5 +115,44 @@
 
 .button:hover {
   background: #55B9A9 !important;
+}
 
+
+@media screen and (max-width: 1000px) {
+  #home h1 {
+    position: relative;
+    text-align: center;
+    top: 0;
+    font-size: 40px;
+    margin-left: -8px;
+    width: 100%;
+  }
+
+  #home h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 0;
+  }
+
+  #names {
+    left: calc(50% + 200px);
+    top: initial;
+  }
+
+  #home .right {
+    display: block;
+  }
+
+  #chart-wrapper {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 350px;
+    top: 140px;
+  }
+
+  .chart:nth-of-type(2), .chart:nth-of-type(3) {
+    display: none;
+  }
 }
