@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
   sites = ["home", "kryptowaehrung", "geschichte", "mining", "probleme", "coinhive", "funktionen", "quellen"];
   currentSiteIndex = 0;
   getCurrentSite();
-
+  console.log(currentSiteIndex);
+  console.log(sites.length);
   document.body.onkeyup = function(e){
     if(e.keyCode == 37){
       previous();
@@ -11,18 +12,22 @@ document.addEventListener("DOMContentLoaded", function() {
       next();
     }
   };
-
   document.getElementById(sites[currentSiteIndex]).style.display = "block";
+  if (currentSiteIndex + 1 == sites.length) {
+    document.getElementById("right").style.display = "none";
+  }
 });
 
 function next() {
   if ( currentSiteIndex + 1 < sites.length ){
     getCurrentSite();
-    ChangeUrl("TITEL", currentSite[0]+ "?" + sites[currentSiteIndex + 1]);
+    ChangeUrl("TITEL", currentSite[0] + "?" + sites[currentSiteIndex + 1]);
     currentSiteIndex++;
     animate(document.getElementById(sites[currentSiteIndex - 1]), document.getElementById(sites[currentSiteIndex]) , "outLeft");
   }
-
+  if (currentSiteIndex + 1 == sites.length) {
+    document.getElementById("right").style.display = "none";
+  }
 }
 
 function previous() {
@@ -32,6 +37,7 @@ function previous() {
     currentSiteIndex--;
     animate(document.getElementById(sites[currentSiteIndex + 1]), document.getElementById(sites[currentSiteIndex]) , "outRight");
   }
+  document.getElementById("right").style.display = "block";
 }
 
 async function animate(elem1, elem2, direction) {
