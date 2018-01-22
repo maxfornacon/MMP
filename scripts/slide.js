@@ -22,6 +22,7 @@ function next() {
     currentSiteIndex++;
     animate(document.getElementById(sites[currentSiteIndex - 1]), document.getElementById(sites[currentSiteIndex]) , "outLeft");
   }
+
 }
 
 function previous() {
