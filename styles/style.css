@@ -22,11 +22,10 @@ main {
   margin: 0 auto;
   max-width: 60em;
   background-color: white;
-  height: calc(100% - 100px);
 	padding-top: 70px;
 	padding-left: 30px;
 	padding-right: 30px;
-
+	margin-bottom: 100px;
 }
 
 @media screen and (max-width: 500px){
@@ -178,4 +177,16 @@ p {
 
 @keyframes inLeft {
   to {left: calc((100% - 75em) / 2);}
+}
+
+footer{
+	width: 100%;
+	height: 50px;
+	background: #4a4a4a;
+}
+
+footer p {
+	color: #cecece;
+	text-align: center;
+	padding-top: 15px;
 }

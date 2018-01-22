@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
   currentSiteIndex = 0;
   getCurrentSite();
 
-  console.log(currentSite[1]);
-  console.log("sites.legth " + sites.length);
   document.body.onkeyup = function(e){
     if(e.keyCode == 37){
       previous();
@@ -14,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
-  console.log(currentSiteIndex);
   document.getElementById(sites[currentSiteIndex]).style.display = "block";
 });
 
@@ -65,7 +62,6 @@ function sleep(ms) {
 function getCurrentSite(){
   pathname = window.location.href;
   currentSite = window.location.href.split('?');
-  console.log(currentSite[0]);
   for(var i = 0; i < sites.length; i++){
     if( currentSite[1] == sites[i]){
       currentSiteIndex = i;
@@ -75,16 +71,10 @@ function getCurrentSite(){
 }
 
 function ChangeUrl(title, url) {
-  /*var divs = document.getElementsByClassName("sliderDiv");
-  var i;
-  for (i = 0; i < divs.length; i++) {
-    divs[i].style.display = "none";
-  */
   if (typeof (window.history.pushState) != "undefined") {
     var obj = { Title: title, Url: url };
     window.history.pushState(obj, obj.Title, obj.Url);
 
-    console.log(currentSiteIndex);
   } else {
     alert("Browser does not support HTML5.");
   }
