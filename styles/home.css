@@ -70,12 +70,6 @@
   top: 100%;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 0.5; }
-}
-
-
 .button {
   text-decoration: none;
   background: #56CA9E;
@@ -132,7 +126,7 @@
     top: initial;
   }
 
-  #home #right {
+  #home .button {
     display: block;
     position: relative !important;
     left: calc( 50% - 75px);
