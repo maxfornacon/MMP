@@ -28,6 +28,7 @@
   position: absolute;
   top: 200px;
   left: calc(50% - 500px);
+  color: rgba(0, 0, 0, 0.74);
 }
 
 #names {
@@ -107,6 +108,9 @@
 
 .button img {
   position: absolute;
+  height: 30px !important;
+  top: 10px;
+  right: 25px;
 }
 
 .button:hover {

@@ -4,6 +4,7 @@ nav {
   background: #5678d8;
   position: fixed;
   top: 0px;
+  z-index: 99;
 }
 
 ul.menu {

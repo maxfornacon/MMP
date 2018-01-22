@@ -8,6 +8,10 @@ html, body {
 	height: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
 	color: #24292e;
 	min-height: calc(100% - 100px);
@@ -18,8 +22,8 @@ main {
   margin: 0px auto;
   max-width: 60em;
   background-color: white;
-  height: 100%;
-  margin-top: 100px;
+  height: calc(100% - 100px);
+  padding-top: 70px;
 }
 
 h1, h2, h3 {
@@ -83,9 +87,45 @@ p {
 	margin: 30px auto;
 }
 
-
-#slideIn {
+.slideOutLeft, .slideInFromRight, .slideOutRight, .slideInFromLeft {
   position: absolute;
-  right: -100%;
+  top: 0;
+}
 
+.slideOutLeft {
+  left: calc((100% - 75em) / 2);
+  animation: outLeft 0.5s linear;
+}
+
+@keyframes outLeft {
+  to {left: -100%;}
+}
+
+.slideInFromRight {
+  display: block;
+  right: -100%;
+  animation: inRight 0.5s linear;
+}
+
+@keyframes inRight {
+  to {right: calc((100% - 75em) / 2);}
+}
+
+.slideOutRight {
+  right: calc((100% - 75em) / 2);
+  animation: outRight 0.5s linear;
+}
+
+@keyframes outRight {
+  to {right: -100%;}
+}
+
+.slideInFromLeft{
+  display: block;
+  left: -100%;
+  animation: inLeft 0.5s linear;
+}
+
+@keyframes inLeft {
+  to {left: calc((100% - 75em) / 2);}
 }
