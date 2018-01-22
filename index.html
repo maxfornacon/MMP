@@ -1,21 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimedia Projekt</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
-
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://authedmine.com/lib/captcha.min.js" async></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
     <script src="scripts/slide.js"></script>
   </head>
   <body>
-    <div w3-include-html="_nav.html"></div>
-    <div w3-include-html="_arrows.html"></div>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="index.html?home">Home</a>
+    		</li>
+    		<li>
+    			<a href="index.html?kryptowaehrung">Kryptowährung &#9662;</a>
+          <ul>
+            <li><a href="index.html?geschichte">Geschichte</a></li>
+            <li><a href="index.html?mining">Mining</a></li>
+            <li><a href="index.html?probleme">Probleme</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html?coinhive">Coinhive &#9662;</a>
+          <ul>
+            <li><a href="index.html?funktionen">Funktionen</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="arrow" id="left" onclick="previous()">
+      <img src="images/arrow.svg" alt="arrow left">
+    </div>
+    <div class="arrow" id="right" onclick="next()">
+       <img src="images/arrow.svg" alt="arrow right">
+    </div>
 
     <div id="home" class="sliderDiv">
       <h1>Kryptowährungen</h1>
@@ -31,7 +53,7 @@
       </a>
       <div id="chart-wrapper">
         <div class="chart">
-          <script type="text/javascript">
+          <script>
             baseUrl = "https://widgets.cryptocompare.com/";
             var scripts = document.getElementsByTagName("script");
             var embedder = scripts[ scripts.length - 1 ];
@@ -49,7 +71,7 @@
           </script>
         </div>
         <div class="chart">
-          <script type="text/javascript">
+          <script>
             baseUrl = "https://widgets.cryptocompare.com/";
             var scripts = document.getElementsByTagName("script");
             var embedder = scripts[ scripts.length - 1 ];
@@ -67,7 +89,7 @@
           </script>
         </div>
         <div class="chart">
-          <script type="text/javascript">
+          <script>
             baseUrl = "https://widgets.cryptocompare.com/";
             var scripts = document.getElementsByTagName("script");
             var embedder = scripts[ scripts.length - 1 ];
@@ -199,7 +221,7 @@
       <p>
         Da Kryptowährungen komplexe, rechenintensive Algorithmen erfüllen müssen, bedarf es
         meist Computer mit spezieller Hardware. Diese sogenannten Mining Rigs bestehen dazu
-        meist aus mehreren parallel betriebene Grafikkarten. </br>
+        meist aus mehreren parallel betriebene Grafikkarten. <br/>
         Da die Mining Rigs sehr stromhungrig sind, ist es je nach Zeit und Ort möglich, dass
         die Stromkosten höher sind als der Profit durch das errechnete Geld. Es lohnt sich zum
         Beispiel sehr viel mehr, ein Mining Rig in den USA aufzustellen, als in Deutschland, da
@@ -307,7 +329,7 @@
         einfach nur ein Häkchen setzen und ein Algorithmus prüft im Hintergund
         ob wirklich eine Person vor dem Rechner sitzt.</p>
 
-        <div class="g-recaptcha" data-sitekey="6Lf1Bj0UAAAAANhdNT46xvMVeERjeR-5fyEHX5qB"></div>
+        <img class="g-recaptcha" src="images/NoCAPTCHA_reCAPTCHA.gif"/>
 
       <p>Coinhive verfolgt für ihre Captcha-Variante das sogenannte "Proof Of
         Work Principle". So wird ein Coinminer gestartet, wenn man den Haken
