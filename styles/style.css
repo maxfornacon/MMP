@@ -93,6 +93,7 @@ p {
 .g-recaptcha, .coinhive-captcha, .coinhive-miner {
 	width: 303px;
 	margin: 30px auto;
+	display: block;
 }
 
 .pictures {

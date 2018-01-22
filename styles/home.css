@@ -11,6 +11,7 @@
   position: fixed;
   top: 60px;
   margin: 0;
+  padding: 0;
 }
 
 #home h1 {
@@ -123,8 +124,8 @@
     position: relative;
     text-align: center;
     top: 0;
+    left: 0;
     font-size: 40px;
-    margin-left: -8px;
     width: 100%;
   }
 
@@ -133,23 +134,27 @@
     width: 100%;
     text-align: center;
     top: 0;
+    left: 0;
   }
 
   #names {
-    left: calc(50% + 200px);
+    left: calc(50% - 160px);
     top: initial;
   }
 
-  #home .right {
+  #home #right {
     display: block;
+    position: relative !important;
+    left: calc( 50% - 75px);
+    top: 160px !important;
   }
 
   #chart-wrapper {
     display: block;
     margin: 0 auto;
     position: relative;
-    width: 350px;
-    top: 140px;
+    width: 320px;
+    top: 190px;
   }
 
   .chart:nth-of-type(2), .chart:nth-of-type(3) {
